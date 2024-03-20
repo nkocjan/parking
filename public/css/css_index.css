@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  background-image: url(../zdjecia/parking-spot.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+li {
+  border: 2px solid #d4a373;
+  color: #d4a373;
+  font-weight: 800;
+  transition: transform ease-in-out 0.5s;
+  padding: 5px;
+  background-color: rgb(254, 250, 224, 0.3);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.main-text {
+  font-weight: 800;
+}
+.navbarEditable {
+  text-align: center;
+  align-items: center;
+}
+  
+@media (min-width: 767px) {
+  .navbar ul li:hover {
+    cursor: pointer;
+    transform: rotate(10deg) scale(1.2);
+  }
+  .main-text {
+    font-size: 30px;
+  }
+  .wolne_miejsca {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px){
+  li {
+    border: none;
+    background-color: rgb(254, 250, 224, 0);
+  }
+  .main-text {
+    font-size: 20px;
+  }
+  .wolne_miejsca {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.form form {
+  text-align: center;
+}
+.form input {
+  display: block;
+  margin-top: 30px;
+  height: 5vh;
+  font-size: 20px;
+  border: none;
+  color: #d4a373;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #d4a373;
+}
+.form input:focus {
+  text-decoration: none;
+  outline: none;
+  background-color: #faedcd;
+  border-radius: 20px;
+}
+.form input:hover {
+  background-color: #fefae0;
+  border-radius: 20px;
+}
+.form input:hover:focus {
+  background-color: #faedcd;
+  border-radius: 20px;
+}
+.form::placeholder {
+  color: #d4a373;
+  text-align: center;
+}
+.form button {
+  margin-top: 30px;
+
+  background-color: #fefae0;
+  border: 1px solid #d4a373;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 760;
+  transition: transform 100ms ease-in;
+}
+.form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.form fieldset {
+  border-radius: 10px;
+  margin-top: 30px;
+  color: #d4a373;
+  border-color: #d4a373;
+  font-weight: 600;
+  font-size: 17px;
+}
+.wolne_miejsca {
+  margin-top: 15px;
+}
+.box {
+  min-height: 50px;
+  text-align: center;
+}

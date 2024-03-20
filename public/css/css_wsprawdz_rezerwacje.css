@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  background-image: url(../zdjecia/parking-spot.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+li {
+    border: 2px solid #d4a373;
+    color: #d4a373;
+    font-weight: 800;
+    transition: transform ease-in-out 0.5s;
+    padding: 5px;
+    background-color: rgb(254, 250, 224, 0.3);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .navbarEditable {
+    text-align: center;
+    align-items: center;
+  }
+
+  @media (min-width: 767px) {
+    .navbar ul li:hover {
+      cursor: pointer;
+      transform: rotate(10deg) scale(1.2);
+    }
+  }
+  @media (max-width: 767px) {
+    li {
+      border: none;
+      background-color: rgb(254, 250, 224, 0);
+    }
+  }
+
+  .sprawdz-box-1 input {
+    border: none;
+    color: #d4a373;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #d4a373;
+    font-size: 18px;
+    background-color: rgb(254, 250, 224, 0.3);
+    text-emphasis: none;
+  }
+  
+  .sprawdz-box-1 button {
+    background-color: #fefae0;
+    border: 1px solid #d4a373;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 760;
+    transition: transform 100ms ease-in;
+  }
+  .sprawdz-box-1 button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .sprawdz-box-2 {
+
+    white-space: nowrap;
+  }
+  .sprawdz-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .sprawdz-box fieldset {
+    border-radius: 20px;
+  }
+  .sprawdz-box-2 fieldset {
+    text-align: left;
+  }
+  
+  .rezerwacja-info {
+    float: left;
+  }
+  .prawo {
+    text-align: right;
+    margin-left: 20px;
+  }
+  .main-test {
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
